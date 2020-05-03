@@ -2453,6 +2453,14 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-relay@^7.0.3":
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/@types/react-relay/-/react-relay-7.0.3.tgz#73a7dd35286aabd645bfbe4a00723a7b546054fe"
+  integrity sha512-laZ9nGDqQd9VyljJ2w8tGDcFZz9dm8K6NHsyDR8jig1eLzjYf/3ayQl+N3hnrfOVLUQsmuvy4dsyyJzjCIJAHA==
+  dependencies:
+    "@types/react" "*"
+    "@types/relay-runtime" "*"
+
 "@types/react@*", "@types/react@^16.9.17", "@types/react@^16.9.23":
   version "16.9.34"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.34.tgz#f7d5e331c468f53affed17a8a4d488cd44ea9349"
@@ -2467,6 +2475,11 @@
   integrity sha512-7RVHFjClwG1x987MSIKusCMMicu7tsvpGgwPTJpYgf0j896G+LCeyGMewDBKVxc9Tlj5OjA9y7PtgvwGVQsACg==
   dependencies:
     "@types/node" "*"
+
+"@types/relay-runtime@*", "@types/relay-runtime@^8.0.9":
+  version "8.0.9"
+  resolved "https://registry.yarnpkg.com/@types/relay-runtime/-/relay-runtime-8.0.9.tgz#4d09a8016a9300e3d2575b0a14b314e7763aa2dd"
+  integrity sha512-LD8vLMoKegn/wMo0UPgX3LZ0/3qzVusrLVjAQT6wfDUQA3V9PkrkzUGWCqpPvIgRUPev/vVzVHrNRp9MOpLFfA==
 
 "@types/rimraf@^2.0.2":
   version "2.0.4"
@@ -3679,7 +3692,7 @@ babel-plugin-extract-import-names@^1.6.0:
   dependencies:
     "@babel/helper-plugin-utils" "7.8.3"
 
-babel-plugin-macros@^2.8.0:
+babel-plugin-macros@^2.0.0, babel-plugin-macros@^2.8.0:
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-macros/-/babel-plugin-macros-2.8.0.tgz#0f958a7cc6556b1e65344465d99111a1e5e10138"
   integrity sha512-SEP5kJpfGYqYKpBrj5XU3ahw5p5GOHJ0U5ssOSQ/WBVdwkD2Dzlce95exQTs3jOVWPPKLBN2rlEWkCK7dSmLvg==
@@ -3687,6 +3700,13 @@ babel-plugin-macros@^2.8.0:
     "@babel/runtime" "^7.7.2"
     cosmiconfig "^6.0.0"
     resolve "^1.12.0"
+
+babel-plugin-relay@^9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-relay/-/babel-plugin-relay-9.1.0.tgz#e44573c6ea847951724cd3fea95219b36e759353"
+  integrity sha512-W0+VoCAmyUxxGrtIcsuZ4fr5oxSxoEcOK5qpGAwxczSSZSNN+ACWqqvDFmgyh5B/ZgK7tXWCarU9HekAkdFpZQ==
+  dependencies:
+    babel-plugin-macros "^2.0.0"
 
 babel-plugin-remove-graphql-queries@^2.9.0:
   version "2.9.0"
@@ -5199,7 +5219,7 @@ cors@^2.8.5:
     object-assign "^4"
     vary "^1"
 
-cosmiconfig@5.2.1, cosmiconfig@^5.0.0, cosmiconfig@^5.0.6:
+cosmiconfig@5.2.1, cosmiconfig@^5.0.0, cosmiconfig@^5.0.5, cosmiconfig@^5.0.6:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-5.2.1.tgz#040f726809c591e77a17c0a3626ca45b4f168b1a"
   integrity sha512-H65gsXo1SKjf8zmrJ67eJk8aIRKV5ff2D4uKZIBZShbhGSpEmsQOPW/SKMKYhSTrqR7ufy6RP69rPogdaPh/kA==
@@ -9147,6 +9167,11 @@ immer@^5.3.6:
   version "5.3.6"
   resolved "https://registry.yarnpkg.com/immer/-/immer-5.3.6.tgz#51eab8cbbeb13075fe2244250f221598818cac04"
   integrity sha512-pqWQ6ozVfNOUDjrLfm4Pt7q4Q12cGw2HUZgry4Q5+Myxu9nmHRkWBpI0J4+MK0AxbdFtdMTwEGVl7Vd+vEiK+A==
+
+immutable@^4.0.0-rc.12:
+  version "4.0.0-rc.12"
+  resolved "https://registry.yarnpkg.com/immutable/-/immutable-4.0.0-rc.12.tgz#ca59a7e4c19ae8d9bf74a97bdf0f6e2f2a5d0217"
+  integrity sha512-0M2XxkZLx/mi3t8NVwIm1g8nHoEmM9p9UBl/G9k4+hm0kBgOVdMV/B3CY5dQ8qG8qc80NN4gDV4HQv6FTJ5q7A==
 
 immutable@~3.7.6:
   version "3.7.6"
@@ -13823,6 +13848,16 @@ react-refresh@^0.7.0:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.7.2.tgz#f30978d21eb8cac6e2f2fde056a7d04f6844dd50"
   integrity sha512-u5l7fhAJXecWUJzVxzMRU2Zvw8m4QmDNHlTrT5uo3KBlYBhmChd7syAakBoay1yIiVhx/8Fi7a6v6kQZfsw81Q==
 
+react-relay@^9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/react-relay/-/react-relay-9.1.0.tgz#f0d21120a535c956ddb7feafda6f92175eb6cc6b"
+  integrity sha512-puE6o4tDTogQsRoRkuKpLhJ8fW4gvwhdpg5RcbSgj2M6WSGM2YvOWXTbD2mttgIvtpZtfoD8WmLArM3P7vQblw==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    fbjs "^1.0.0"
+    nullthrows "^1.1.1"
+    relay-runtime "9.1.0"
+
 react-router-dom@^6.0.0-alpha.3:
   version "6.0.0-alpha.3"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.0.0-alpha.3.tgz#295aa7691de913b81f481b7cb14418e3b2f08edf"
@@ -14154,6 +14189,14 @@ relateurl@^0.2.7:
   resolved "https://registry.yarnpkg.com/relateurl/-/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
   integrity sha1-VNvzd+UUQKypCkzSdGANP/LYiKk=
 
+relay-compiler-language-typescript@^12.0.1:
+  version "12.0.1"
+  resolved "https://registry.yarnpkg.com/relay-compiler-language-typescript/-/relay-compiler-language-typescript-12.0.1.tgz#2b8052cdd6376f8dc3ac38c45ba83db942fd5b24"
+  integrity sha512-Ig2UN53kkw4r9txOsfxBQq39qxhhzliiMCjB2/Z1l78FKsJLXrp2GDzcGIZ8lM+MGhMTp8wKGvLAECL4fCZZfA==
+  dependencies:
+    immutable "^4.0.0-rc.12"
+    invariant "^2.2.4"
+
 relay-compiler@8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/relay-compiler/-/relay-compiler-8.0.0.tgz#567edebc857db5748142b57a78d197f976b5e3ac"
@@ -14176,10 +14219,47 @@ relay-compiler@8.0.0:
     signedsource "^1.0.0"
     yargs "^14.2.0"
 
+relay-compiler@^9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/relay-compiler/-/relay-compiler-9.1.0.tgz#e2975de85192e2470daad78e30052bf9614d22ed"
+  integrity sha512-jsJx0Ux5RoxM+JFm3M3xl7UfZAJ0kUTY/r6jqOpcYgVI3GLJthvNI4IoziFRlWbhizEzGFbpkdshZcu9IObJYA==
+  dependencies:
+    "@babel/core" "^7.0.0"
+    "@babel/generator" "^7.5.0"
+    "@babel/parser" "^7.0.0"
+    "@babel/runtime" "^7.0.0"
+    "@babel/traverse" "^7.0.0"
+    "@babel/types" "^7.0.0"
+    babel-preset-fbjs "^3.3.0"
+    chalk "^2.4.1"
+    fast-glob "^2.2.2"
+    fb-watchman "^2.0.0"
+    fbjs "^1.0.0"
+    immutable "~3.7.6"
+    nullthrows "^1.1.1"
+    relay-runtime "9.1.0"
+    signedsource "^1.0.0"
+    yargs "^14.2.0"
+
+relay-config@^9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/relay-config/-/relay-config-9.1.0.tgz#5aedf47ad309dc8fe6ce488ab5e556368ec2ca4a"
+  integrity sha512-x9/5NOGUuGntYPVUK34yA8yedysBNoRT9BJIjRxGNIIIyof5NfpTPHoXBlD/g5w9DWN0yX11Ei/ar5Ma267vXQ==
+  dependencies:
+    cosmiconfig "^5.0.5"
+
 relay-runtime@8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/relay-runtime/-/relay-runtime-8.0.0.tgz#52585a7bf04a710bd1bc664bfb0a60dbff3ce6e1"
   integrity sha512-lOaZ7K/weTuCIt3pWHkxUG8s7iohI4IyYj65YV4sB9iX6W0uMvt626BFJ4GvNXFmd+OrgNnXcvx1mqRFqJaV8A==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    fbjs "^1.0.0"
+
+relay-runtime@9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/relay-runtime/-/relay-runtime-9.1.0.tgz#d0534007d5c43e7b9653c6f5cc112ffac09c5020"
+  integrity sha512-6FE5YlZpR/b3R/HzGly85V+c4MdtLJhFY/outQARgxXonomrwqEik0Cr34LnPK4DmGS36cMLUliqhCs/DZyPVw==
   dependencies:
     "@babel/runtime" "^7.0.0"
     fbjs "^1.0.0"
